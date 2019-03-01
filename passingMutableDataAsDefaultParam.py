@@ -19,3 +19,16 @@ add_user_to_list()
 add_user_to_list()
 
 # Default Parameter assignment is done onle once..
+
+# To resolve this, assign NOne to the Default parameter and re-assign the default parameter to [] initially
+
+# Resolved Code:
+
+def add_user_to_list_corrected(user = None):
+    if(user == None):
+        user = []
+    user.append("Mayank")
+    print(user)
+
+add_user_to_list_corrected()
+add_user_to_list_corrected()

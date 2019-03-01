@@ -2,11 +2,9 @@
 
 initialIntValue = 10
 
-
 def change_user_data(inputParam):
     print(inputParam is initialIntValue)
     return inputParam
-
 
 outputData = change_user_data(initialIntValue)
 
