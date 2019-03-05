@@ -1,5 +1,6 @@
 # Working with Full Slice..
 
+
 initialList = [1, 2, 3, 4]
 
 initialCopyList = initialList[:]
@@ -38,3 +39,21 @@ listMutable[0][0] = 10
 print(listMutable[0] is initialCopyList[0])
 
 print(initialCopyList[0][0])
+
+
+# Using Copy Keyword..
+
+initialListData = [1, 2, 3, 4]
+
+# Copy also does a shallow copy for the existing data..
+
+newCopiedData = initialListData.copy()
+
+print("The Length of the New Data is " + str(len(newCopiedData)))
+
+
+# Copying Enumerable data structures
+
+oldData = [1, 2, 3, 4]
+
+copiedData = list(oldData)
